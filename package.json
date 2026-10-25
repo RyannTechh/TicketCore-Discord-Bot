@@ -1,0 +1,46 @@
+{
+  "name": "ticketcore-discord-bot",
+  "version": "1.4.1",
+  "private": true,
+  "description": "TicketCore Discord ticket bot with General Support, Report and Partner tickets, SQLite history, transfers, escalation, duplicate approval, priorities, reopen support, inactivity tracking, staff statistics, transcripts and customer ratings.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check config.js",
+    "test": "node --test bot.test.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "discord-html-transcripts": "3.2.0",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.4.7",
+    "sql.js": "^1.13.0"
+  },
+  "license": "MIT",
+  "author": "RyannTechh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RyannTechh/TicketCore-Discord-Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RyannTechh/TicketCore-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/RyannTechh/TicketCore-Discord-Bot#readme",
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "ticket-bot",
+    "support-tickets",
+    "discordjs",
+    "sqlite",
+    "transcripts"
+  ],
+  "overrides": {
+    "discord-html-transcripts": {
+      "undici": "^6.29.1"
+    }
+  }
+}
